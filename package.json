@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "calc": "postcss styles.postcss -o temp/stylesCalced.postcss",
+    "calc": "postcss src/styles.postcss -o temp/stylesCalced.postcss",
     "render": "postcss temp/stylesCalced.postcss -o dist/styles.css",
     "delcalc": "rimraf temp",
     "build": "npm run calc && npm run render && npm run delcalc"
