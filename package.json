@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "calc": "postcss styles.postcss -o stylesCalced.postcss",
-    "render": "postcss stylesCalced.postcss -o styles.css",
-    "build": "npm run calc && npm run render"
+    "calc": "postcss styles.postcss -o temp/stylesCalced.postcss",
+    "render": "postcss temp/stylesCalced.postcss -o dist/styles.css",
+    "delcalc": "rimraf temp",
+    "build": "npm run calc && npm run render && npm run delcalc"
   },
   "keywords": [],
   "author": "",
@@ -33,5 +34,8 @@
     "postcss-sorting": "7.0.1",
     "postcss-typescript-d-ts": "^1.0.0",
     "postcss-utilities": "0.8.4"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
   }
 }
