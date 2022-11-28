@@ -1,0 +1,37 @@
+{
+  "name": "colormap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "calc": "postcss styles.postcss -o stylesCalced.postcss",
+    "render": "postcss stylesCalced.postcss -o styles.css",
+    "build": "npm run calc && npm run render"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.14",
+    "cssnano-preset-advanced": "^5.3.9",
+    "cssnano-preset-lite": "^2.1.3",
+    "postcss": "^8.4.19",
+    "postcss-calc": "^8.2.4",
+    "postcss-cli": "^10.0.0",
+    "postcss-color-converter": "^1.1.0",
+    "postcss-combine-media-query": "1.0.1",
+    "postcss-html": "1.5.0",
+    "postcss-import": "15.0.0",
+    "postcss-jit-props": "^1.0.7",
+    "postcss-load-config": "4.0.1",
+    "postcss-merge-rules": "^5.1.3",
+    "postcss-preset-env": "7.8.2",
+    "postcss-scss": "^4.0.6",
+    "postcss-short": "5.0.0",
+    "postcss-sort-media-queries": "4.3.0",
+    "postcss-sorting": "7.0.1",
+    "postcss-typescript-d-ts": "^1.0.0",
+    "postcss-utilities": "0.8.4"
+  }
+}
