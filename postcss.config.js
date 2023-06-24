@@ -1,23 +1,91 @@
+const colors = {
+    $chroma050: 'calc((85 - (6.25 * 12.5)) * 0.01)',
+    $chroma100: 'calc((85 - (5 * 12.5)) * 0.01)',
+    $chroma200: 'calc((85 - (3.75 * 12.5)) * 0.01)',
+    $chroma300: 'calc((85 - (2.5 * 12.5)) * 0.01)',
+    $chroma400: 'calc((85 - (1.25 * 12.5)) * 0.01)',
+    $chroma500: 'calc((85 - (0 * 12.5)) * 0.01)',
+    $chroma600: 'calc((85 - (1.25 * 12.5)) * 0.01)',
+    $chroma700: 'calc((85 - (2.5 * 12.5)) * 0.01)',
+    $chroma800: 'calc((85 - (3.75 * 12.5)) * 0.01)',
+    $chroma900: 'calc((85 - (5 * 12.5)) * 0.01)',
+    $chroma950: 'calc((85 - (6.25 * 12.5)) * 0.01)',
+    $chromaNeutral050: 'calc((15 - (4.5 * 2.5)) * 0.0015)',
+    $chromaNeutral100: 'calc((15 - (4 * 2.5)) * 0.0015)',
+    $chromaNeutral200: 'calc((15 - (3 * 2.5)) * 0.0015)',
+    $chromaNeutral300: 'calc((15 - (2 * 2.5)) * 0.0015)',
+    $chromaNeutral400: 'calc((15 - (1 * 2.5)) * 0.0015)',
+    $chromaNeutral500: 'calc((15 - (0 * 2.5)) * 0.0015)',
+    $chromaNeutral600: 'calc((15 - (1 * 2.5)) * 0.0015)',
+    $chromaNeutral700: 'calc((15 - (2 * 2.5)) * 0.0015)',
+    $chromaNeutral800: 'calc((15 - (3 * 2.5)) * 0.0015)',
+    $chromaNeutral900: 'calc((15 - (4 * 2.5)) * 0.0015)',
+    $chromaNeutral950: 'calc((15 - (4.5 * 2.5)) * 0.0015)',
+    $lightness050: '87.125%',
+    $lightness100: '83%',
+    $lightness200: '74.75%',
+    $lightness300: '66.5%',
+    $lightness400: '58.25%',
+    $lightness500: '50%',
+    $lightness600: '41.75%',
+    $lightness700: '33.5%',
+    $lightness800: '25.25%',
+    $lightness900: '17%',
+    $lightness950: '12.875%',
+    $hueBaseFuchsia: '0',
+    $hueBaseRed: '30',
+    $hueBaseOrange: '60',
+    $hueBaseYellow: '90',
+    $hueBaseLime: '120',
+    $hueBaseGreen: '150',
+    $hueBaseTeal: '180',
+    $hueBaseCyan: '210',
+    $hueBaseSky: '240',
+    $hueBaseBlue: '270',
+    $hueBasePurple: '300',
+    $hueBaseGrape: '330',
+    $hueBaseSlate: '255',
+    $hueBaseShadow: '45',
+    $hueModifier050: '6',
+    $hueModifier100: '5',
+    $hueModifier200: '4',
+    $hueModifier300: '3',
+    $hueModifier400: '2',
+    $hueModifier500: '1',
+    $hueModifier600: '(7.5 * 1)',
+    $hueModifier700: '(7.5 * 2)',
+    $hueModifier800: '(7.5 * 3)',
+    $hueModifier900: '(7.5 * 4)',
+    $hueModifier950: '(7.5 * 4.5)',
+    $hueModifierNeutral050: '22.5',
+    $hueModifierNeutral100: '20',
+    $hueModifierNeutral200: '15',
+    $hueModifierNeutral300: '10',
+    $hueModifierNeutral400: '5',
+    $hueModifierNeutral500: '0',
+    $hueModifierNeutral600: '5',
+    $hueModifierNeutral700: '10',
+    $hueModifierNeutral800: '15',
+    $hueModifierNeutral900: '20',
+    $hueModifierNeutral950: '22.5'
+};
+
 module.exports = {
     plugins: {
         'postcss-calc': {},
-        'postcss-import': {},
-        'postcss-preset-env': {
-            stage: 1,
-        },
-        'postcss-color-converter': {
-            outputColorFormat: 'hsl'
-        },
-        'postcss-short': {},
-        autoprefixer: {},
-        'postcss-sorting': {},
-        'postcss-merge-rules': {},
-        'postcss-sort-media-queries': {},
-        'cssnano': {
-            preset: ['cssnano-preset-advanced', {
-                normalizeWhitespace: false,
-                colormin: false
-            }]
+        'postcss-simple-vars': { variables: colors },
+        'postcss-preset-env': {},
+        //'postcss-color-converter': {
+        //    outputColorFormat: 'hsl'
+        //},
+        cssnano: {
+            preset: [
+                'cssnano-preset-advanced',
+                {
+                    normalizeWhitespace: false,
+                    colormin: false
+                }
+            ]
         }
-    },
+    }
 };

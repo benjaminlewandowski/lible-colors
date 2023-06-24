@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        title Color Demo
+        link(rel="stylesheet" href="./dist/styles.css")
+        link(rel="stylesheet" href="./src/demo.css")
+    body
+        main
+            div
+                each color in ["shadow", "neutral", "slate"]
+                    ul
+                        each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+                            li(style="background-color: var(--"+color+"-"+shade+")")
+            div
+                each color in ["fuchsia","red","orange","yellow","lime","green","teal","cyan","sky","blue","purple","grape"]
+                    ul
+                        each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+                            li(style="background-color: var(--"+color+"-"+shade+")")
