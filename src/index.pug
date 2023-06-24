@@ -10,12 +10,23 @@ html
     body
         main
             div
-                each color in ["shadow", "neutral", "slate"]
-                    ul
-                        each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
-                            li(style="background-color: var(--"+color+"-"+shade+")")
+                dl
+                    each color in ["shadow", "neutral", "slate", "fuchsia","red","orange","yellow","lime","green","teal","cyan","sky","blue","purple","grape"]
+                        dt= color
+                        dd(style="background-color: var(--"+color+")")
             div
-                each color in ["fuchsia","red","orange","yellow","lime","green","teal","cyan","sky","blue","purple","grape"]
-                    ul
-                        each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
-                            li(style="background-color: var(--"+color+"-"+shade+")")
+                dl
+                    each color in ["shadow", "neutral", "slate"]
+                        dt= color
+                        dd
+                            ul
+                                each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+                                    li(style="background-color: var(--"+color+"-"+shade+")")
+            div
+                dl
+                    each color in ["fuchsia","red","orange","yellow","lime","green","teal","cyan","sky","blue","purple","grape"]
+                        dt= color
+                        dd
+                            ul
+                                each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+                                    li(style="background-color: var(--"+color+"-"+shade+")")

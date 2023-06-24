@@ -49,7 +49,7 @@
     --yellow-800: oklch($lightness800 $chroma800 calc($hueBaseYellow - $hueModifier800));
     --yellow-900: oklch($lightness900 $chroma900 calc($hueBaseYellow - $hueModifier900));
     --yellow-950: oklch($lightness950 $chroma950 calc($hueBaseYellow - $hueModifier950));
-    --yellow: --yellow-500;
+    --yellow: var(--yellow-500);
 
     --lime-050: oklch($lightness050 $chroma050 calc($hueBaseLime - $hueModifier050));
     --lime-100: oklch($lightness100 $chroma100 calc($hueBaseLime - $hueModifier100));
@@ -62,7 +62,7 @@
     --lime-800: oklch($lightness800 $chroma800 calc($hueBaseLime - $hueModifier800));
     --lime-900: oklch($lightness900 $chroma900 calc($hueBaseLime - $hueModifier900));
     --lime-950: oklch($lightness950 $chroma950 calc($hueBaseLime - $hueModifier950));
-    --lime: --lime-500;
+    --lime: var(--lime-500);
 
     --green-050: oklch($lightness050 $chroma050 calc($hueBaseGreen - $hueModifier050));
     --green-100: oklch($lightness100 $chroma100 calc($hueBaseGreen - $hueModifier100));
@@ -75,7 +75,7 @@
     --green-800: oklch($lightness800 $chroma800 calc($hueBaseGreen - $hueModifier800));
     --green-900: oklch($lightness900 $chroma900 calc($hueBaseGreen - $hueModifier900));
     --green-950: oklch($lightness950 $chroma950 calc($hueBaseGreen - $hueModifier950));
-    --green: --green-500;
+    --green: var(--green-500);
 
     --teal-050: oklch($lightness050 $chroma050 calc($hueBaseTeal - $hueModifier050));
     --teal-100: oklch($lightness100 $chroma100 calc($hueBaseTeal - $hueModifier100));
@@ -88,7 +88,7 @@
     --teal-800: oklch($lightness800 $chroma800 calc($hueBaseTeal - $hueModifier800));
     --teal-900: oklch($lightness900 $chroma900 calc($hueBaseTeal - $hueModifier900));
     --teal-950: oklch($lightness950 $chroma950 calc($hueBaseTeal - $hueModifier950));
-    --teal: --teal-500;
+    --teal: var(--teal-500);
 
     --cyan-050: oklch($lightness050 $chroma050 calc($hueBaseCyan - $hueModifier050));
     --cyan-100: oklch($lightness100 $chroma100 calc($hueBaseCyan - $hueModifier100));
@@ -101,7 +101,7 @@
     --cyan-800: oklch($lightness800 $chroma800 calc($hueBaseCyan - $hueModifier800));
     --cyan-900: oklch($lightness900 $chroma900 calc($hueBaseCyan - $hueModifier900));
     --cyan-950: oklch($lightness950 $chroma950 calc($hueBaseCyan - $hueModifier950));
-    --cyan: --cyan-500;
+    --cyan: var(--cyan-500);
 
     --sky-050: oklch($lightness050 $chroma050 calc($hueBaseSky - $hueModifier050));
     --sky-100: oklch($lightness100 $chroma100 calc($hueBaseSky - $hueModifier100));
@@ -114,7 +114,7 @@
     --sky-800: oklch($lightness800 $chroma800 calc($hueBaseSky - $hueModifier800));
     --sky-900: oklch($lightness900 $chroma900 calc($hueBaseSky - $hueModifier900));
     --sky-950: oklch($lightness950 $chroma950 calc($hueBaseSky - $hueModifier950));
-    --sky: --sky-500;
+    --sky: var(--sky-500);
 
     --blue-050: oklch($lightness050 $chroma050 calc($hueBaseBlue - $hueModifier050));
     --blue-100: oklch($lightness100 $chroma100 calc($hueBaseBlue - $hueModifier100));
@@ -127,7 +127,7 @@
     --blue-800: oklch($lightness800 $chroma800 calc($hueBaseBlue - $hueModifier800));
     --blue-900: oklch($lightness900 $chroma900 calc($hueBaseBlue - $hueModifier900));
     --blue-950: oklch($lightness950 $chroma950 calc($hueBaseBlue - $hueModifier950));
-    --blue: --blue-500;
+    --blue: var(--blue-500);
 
     --purple-050: oklch($lightness050 $chroma050 calc($hueBasePurple - $hueModifier050));
     --purple-100: oklch($lightness100 $chroma100 calc($hueBasePurple - $hueModifier100));
@@ -140,7 +140,7 @@
     --purple-800: oklch($lightness800 $chroma800 calc($hueBasePurple - $hueModifier800));
     --purple-900: oklch($lightness900 $chroma900 calc($hueBasePurple - $hueModifier900));
     --purple-950: oklch($lightness950 $chroma950 calc($hueBasePurple - $hueModifier950));
-    --purple: --purple-500;
+    --purple: var(--purple-500);
 
     --grape-050: oklch($lightness050 $chroma050 calc($hueBaseGrape - $hueModifier050));
     --grape-100: oklch($lightness100 $chroma100 calc($hueBaseGrape - $hueModifier100));
@@ -153,7 +153,7 @@
     --grape-800: oklch($lightness800 $chroma800 calc($hueBaseGrape - $hueModifier800));
     --grape-900: oklch($lightness900 $chroma900 calc($hueBaseGrape - $hueModifier900));
     --grape-950: oklch($lightness950 $chroma950 calc($hueBaseGrape - $hueModifier950));
-    --grape: --grape-500;
+    --grape: var(--grape-500);
 
     --slate-050: oklch($lightness050 $chromaNeutral050 calc($hueBaseSlate - $hueModifierNeutral050));
     --slate-100: oklch($lightness100 $chromaNeutral100 calc($hueBaseSlate - $hueModifierNeutral100));
@@ -166,7 +166,7 @@
     --slate-800: oklch($lightness800 $chromaNeutral800 calc($hueBaseSlate - $hueModifierNeutral800));
     --slate-900: oklch($lightness900 $chromaNeutral900 calc($hueBaseSlate - $hueModifierNeutral900));
     --slate-950: oklch($lightness950 $chromaNeutral950 calc($hueBaseSlate - $hueModifierNeutral950));
-    --slate: --slate-500;
+    --slate: var(--slate-500);
 
     --neutral-050: oklch($lightness050 0 0);
     --neutral-100: oklch($lightness100 0 0);
@@ -179,7 +179,7 @@
     --neutral-800: oklch($lightness800 0 0);
     --neutral-900: oklch($lightness900 0 0);
     --neutral-950: oklch($lightness950 0 0);
-    --neutral: --neutral-500;
+    --neutral: var(--neutral-500);
 
     --shadow-050: oklch($lightness050 $chromaNeutral050 calc($hueBaseShadow - $hueModifierNeutral050));
     --shadow-100: oklch($lightness100 $chromaNeutral100 calc($hueBaseShadow - $hueModifierNeutral100));
@@ -192,7 +192,5 @@
     --shadow-800: oklch($lightness800 $chromaNeutral800 calc($hueBaseShadow - $hueModifierNeutral800));
     --shadow-900: oklch($lightness900 $chromaNeutral900 calc($hueBaseShadow - $hueModifierNeutral900));
     --shadow-950: oklch($lightness950 $chromaNeutral950 calc($hueBaseShadow - $hueModifierNeutral950));
-    --shadow: --shadow-500;
+    --shadow: var(--shadow-500);
 }
-
-/*# sourceMappingURL=styles.postcss.map */

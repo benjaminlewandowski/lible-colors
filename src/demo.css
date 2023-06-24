@@ -11,7 +11,8 @@ div {
     justify-items: flex-start;
 }
 
-ul {
+ul,
+dl {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -20,8 +21,9 @@ ul {
     gap: 0.5rem;
 }
 
-li {
+li,
+dd {
     list-style: none;
     width: 5rem;
-    height: 5rem;
+    min-height: 5rem;
 }
