@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "postcss src/styles.postcss -o dist/styles.css && pug ./src/index.pug -o ./../index.html"
+        "build": "postcss src/styles.postcss -o dist/styles.css && pug ./src/index.pug -o ./"
     },
     "keywords": [],
     "author": "",
@@ -13,11 +13,11 @@
         "cssnano": "^6.0.1",
         "cssnano-preset-advanced": "^6.0.1",
         "nunjucks": "^3.2.4",
-        "postcss": "^8.4.24",
+        "postcss": "^8.4.25",
         "postcss-calc": "^9.0.1",
         "postcss-cli": "^10.1.0",
         "postcss-color-converter": "^1.1.0",
-        "postcss-preset-env": "^8.5.1",
+        "postcss-preset-env": "^9.0.0",
         "postcss-rgba-hex": "^0.3.7",
         "postcss-simple-vars": "^7.0.1"
     },

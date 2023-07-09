@@ -8,25 +8,37 @@ html
         link(rel="stylesheet" href="./dist/styles.css")
         link(rel="stylesheet" href="./src/demo.css")
     body
-        main
-            div
-                dl
-                    each color in ["shadow", "neutral", "slate", "fuchsia","red","orange","yellow","lime","green","teal","cyan","sky","blue","purple","grape"]
-                        dt= color
-                        dd(style="background-color: var(--"+color+")")
-            div
-                dl
-                    each color in ["shadow", "neutral", "slate"]
-                        dt= color
-                        dd
-                            ul
-                                each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
-                                    li(style="background-color: var(--"+color+"-"+shade+")")
-            div
-                dl
-                    each color in ["fuchsia","red","orange","yellow","lime","green","teal","cyan","sky","blue","purple","grape"]
-                        dt= color
-                        dd
-                            ul
-                                each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
-                                    li(style="background-color: var(--"+color+"-"+shade+")")
+main
+    div
+        header
+            h2 colors
+        dl
+            each color in ["fuchsia", "red", "brown", "beige", "olive", "green", "teal", "cyan", "sky", "blue", "purple", "grape"]
+                div
+                    dt= color
+                    dd
+                        ul
+                            each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+                                li(style="background-color: var(--"+color+"-"+shade+")")
+    div
+        header
+            h2 shiny
+        dl
+            each color in ["orange", "yellow", "lime"]
+                div
+                    dt= color
+                    dd
+                        ul
+                            each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+                                li(style="background-color: var(--" + color + "-" + shade + ")")
+    div
+        header
+            h2 neutral-colors
+        dl
+            each color in ["neutral", "neutral-fuchsia", "neutral-red", "neutral-orange", "neutral-yellow", "neutral-lime", "neutral-green", "neutral-teal", "neutral-cyan", "neutral-sky", "neutral-blue", "neutral-purple", "neutral-grape"]
+                div
+                    dt= color
+                    dd
+                        ul
+                            each shade in ["050", 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]
+                                li(style="background-color: var(--" + color + "-" + shade + ")")
